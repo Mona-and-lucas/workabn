@@ -7,11 +7,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="index_mandarin.php">中文</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">联系</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">服务</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php">English</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">关于</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">登录</a></li>
             </ul>
         </div>
     </div>
