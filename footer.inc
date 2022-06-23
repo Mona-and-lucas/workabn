@@ -1,4 +1,4 @@
 <!-- Footer-->
 <footer class="bg-light py-5">
-    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Apply ABN, Melbourne</div></div>
+    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Work ABN, Melbourne</div></div>
 </footer>

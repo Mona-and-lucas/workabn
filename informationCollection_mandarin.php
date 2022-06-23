@@ -522,11 +522,11 @@ include_once "nav_mandarin.inc";
     <br>
     <button class="btn btn-success float-right btn-lg col-md-2" aria-label="Submit">&nbsp;&nbsp;&nbsp;&nbsp;提交&nbsp;&nbsp;&nbsp;&nbsp;</button>
     </form>
+    <form action="payment_form.php"><button type="submit" class="btn btn-info">&nbsp付款&nbsp</button></form>
 </section>
 
-<!-- Footer-->
-<footer class="bg-light py-5">
-    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Work ABN, Melbourne</div></div>
-</footer>
+<?php
+include_once "footer.inc";
+?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

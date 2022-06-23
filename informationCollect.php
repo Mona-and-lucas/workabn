@@ -1,6 +1,10 @@
 <?php
 session_start();
 ?>
+<?php
+// Include configuration file
+require_once 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -525,15 +529,18 @@ session_start();
                     <div class="col-lg-12 col-md-12 form-group"><div class="form-check"> <input type="checkbox" id="infoProvided" name="infoProvided" required="required" class="form-check-input" value="1" />
                             <label class="form-check-label required" for="infoProvided">The information provided in this application (including attachments if applicable) is true and correct *</label></div></div>
                 </div>
+
                 <br>
                 <button class="btn btn-success float-right btn-lg col-md-2" aria-label="Submit">&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;</button>
             </form>
+        <form action="payment_form.php"><button type="submit" class="btn btn-info">Pay now</button></form>
         </section>
 
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Apply ABN, Melbourne</div></div>
-        </footer>
+    <?php
+    include_once "footer.inc";
+    ?>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Stripe JS library -->
+        <script src="https://js.stripe.com/v3/"></script>
         </body>
 </html>
