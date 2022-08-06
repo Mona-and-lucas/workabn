@@ -15,4 +15,18 @@ define('DB_HOST', 'localhost');
 define('DB_USERNAME', 'local');
 define('DB_PASSWORD', '11111111');
 define('DB_NAME', 'local');
+
+//paypal
+
+// PayPal configuration
+define('PAYPAL_ID', 'lucas.qin.au@gmail.com');
+define('PAYPAL_SANDBOX', TRUE); //TRUE or FALSE
+
+define('PAYPAL_RETURN_URL', 'success.php');
+define('PAYPAL_CANCEL_URL', 'cancel.php');
+define('PAYPAL_NOTIFY_URL', 'ipn.php');
+define('PAYPAL_CURRENCY', 'AUD');
+// Change not required
+define('PAYPAL_URL', (PAYPAL_SANDBOX == true)?"https://www.sandbox.paypal.com/cgi-bin/webscr":"https://www.paypal.com/cgi-bin/webscr");
+
 ?>

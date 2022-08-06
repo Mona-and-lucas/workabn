@@ -3,33 +3,12 @@
 <?php
 include_once "head.inc";
 ?>
-<body>
 <?php
 include_once "nav.inc";
 ?>
-<?php
-session_start();
-$message="";
-if(count($_POST)>0) {
-    // $con = mysqli_connect('127.0.0.1:3306','root','','admin') or die('Unable To connect');
-    require_once "settings.php";
-    $con = mysqli_connect($host, $user, $pwd, $sql_db);
-    $result = mysqli_query($con,"SELECT * FROM USER WHERE EMAIL='" . $_POST["email"] . "' and password = '". $_POST["password"]."'");
-    $row  = mysqli_fetch_array($result);
-    if(is_array($row)) {
-
-        $_SESSION["email"] = $row['email'];
-        $_SESSION["password"] = $row['password'];
-    } else {
-        $message = "Invalid Username or Password!";
-    }
-}
-if(isset($_SESSION["email"])) {
-    header("Location:result.php");
-}
-?>
-<form name="frmUser" method="post" action="" align="center">
-    <div class="message"><?php if($message!="") { echo $message; } ?></div>
+<body>
+<form name="frmUser" method="post" action="process_login_new.php" align="center">
+<!--    <div class="message">--><?php //if($message!="") { echo $message; } ?><!--</div>-->
     <div class="card">
         <div class="card-body">
             <br><br><br>

@@ -24,7 +24,7 @@ include_once "nav.inc";
         <br>
         <br>
         <br>
-        <div id="paymentHeading">
+        <div id="paymentHeading" class="col-lg-3 col-md-4 col-sm-10 col-xs-12">
             <h3 class="panel-title">Using Stripe for paying <b class="priceTag"><?php echo '$'.$itemPrice; ?> </b></h3>
             <br>
             <!-- Product Info -->
@@ -38,7 +38,7 @@ include_once "nav.inc";
             <div class="card-header"><h3 class="text-center">Payment</h3></div>
             <br>
                 <!-- Display a payment form -->
-                <form id="paymentFrm" class="hidden form">
+                <form id="paymentFrm" class="hidden form col-lg-3 col-md-4 col-sm-10 col-xs-12">
                     <div class="form-group">
                         <label>Name</label>
                         <input type="text" id="name" class="field" placeholder="Enter name" required="" autofocus="">
@@ -53,10 +53,11 @@ include_once "nav.inc";
                     <div id="paymentElement">
                         <!--Stripe.js injects the Payment Element-->
                     </div>
-
+                    <br>
                     <!-- Form submit button -->
                     <button id="submitBtn" class="btn btn-success">
                         <div class="spinner hidden" id="spinner"></div>
+
                         <span id="buttonText">Pay Now</span>
                     </button>
                 </form>
